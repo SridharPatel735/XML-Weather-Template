@@ -118,6 +118,90 @@
   <ItemGroup>
     <None Include="Resources\images.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled drawing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled drawing %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled drawing %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled drawing %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled drawing %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\09d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\09n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_1n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_1d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transparent-sun-clipart-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PinClipart.com_moon-clipart-png_427179.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

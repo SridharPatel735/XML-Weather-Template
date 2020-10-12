@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.forecastLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.min1 = new System.Windows.Forms.Label();
             this.minLabel = new System.Windows.Forms.Label();
             this.max1 = new System.Windows.Forms.Label();
             this.maxLabel = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.date1 = new System.Windows.Forms.Label();
             this.date2 = new System.Windows.Forms.Label();
             this.min2 = new System.Windows.Forms.Label();
@@ -43,24 +41,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // forecastLabel
-            // 
-            this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
-            this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(213, 21);
-            this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.forecastLabel.Name = "forecastLabel";
-            this.forecastLabel.Size = new System.Drawing.Size(124, 43);
-            this.forecastLabel.TabIndex = 62;
-            this.forecastLabel.Text = "7 Day";
-            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(33, 21);
+            this.label3.Location = new System.Drawing.Point(289, 0);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 43);
@@ -107,18 +93,6 @@
             this.maxLabel.Size = new System.Drawing.Size(133, 20);
             this.maxLabel.TabIndex = 44;
             this.maxLabel.Text = "Max Temperature";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(194, 38);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 41);
-            this.label5.TabIndex = 63;
-            this.label5.Text = "____________________________";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // date1
             // 
@@ -187,36 +161,32 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing;
             this.Controls.Add(this.date2);
             this.Controls.Add(this.min2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.max2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.date1);
-            this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.min1);
             this.Controls.Add(this.minLabel);
             this.Controls.Add(this.max1);
             this.Controls.Add(this.maxLabel);
-            this.Controls.Add(this.label5);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ForecastScreen";
-            this.Size = new System.Drawing.Size(375, 615);
+            this.Size = new System.Drawing.Size(375, 690);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label forecastLabel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label min1;
         private System.Windows.Forms.Label minLabel;
         private System.Windows.Forms.Label max1;
         private System.Windows.Forms.Label maxLabel;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label date1;
         private System.Windows.Forms.Label date2;
         private System.Windows.Forms.Label min2;

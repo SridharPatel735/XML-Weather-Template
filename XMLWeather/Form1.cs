@@ -21,7 +21,7 @@ namespace XMLWeather
             InitializeComponent();
             ExtractForecast();
             ExtractCurrent();
-            ExtractHourly();
+            //ExtractHourly();
 
             // open weather screen for todays weather
             CurrentScreen cs = new CurrentScreen();
@@ -60,6 +60,10 @@ namespace XMLWeather
             days[0].date = DateTime.Now.ToString("ddd dd MMMM");
             days[0].currentTime = DateTime.Now.ToString("hh:mm");
 
+            reader.ReadToFollowing("sun");
+            days[0].sunRise = reader.GetAttribute("rise");
+            days[0].sunSet = reader.GetAttribute("set");
+
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
 
@@ -68,17 +72,19 @@ namespace XMLWeather
 
             reader.ReadToFollowing("wind");
             reader.ReadToFollowing("speed");
+            days[0].windSpeed = reader.GetAttribute("value");
             days[0].wind = reader.GetAttribute("name");
 
             reader.ReadToFollowing("direction");
             days[0].windDirection = reader.GetAttribute("name");
 
             reader.ReadToFollowing("weather");
+            days[0].weatherNumber = reader.GetAttribute("number");
             days[0].condition = reader.GetAttribute("value");
         }
         public static void ExtractHourly()
         {
-            XmlReader reader = XmlReader.Create("https://api.openweathermap.org/data/2.5/onecall?lat=43.3668&lon=-80.9497&exclude=hourly,daily&appid=3f2e224b815c0ed45524322e145149f0");
+            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast?q=Stratford,CA&appid=3f2e224b815c0ed45524322e145149f0");
         }
     }
 }
