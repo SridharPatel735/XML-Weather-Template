@@ -7,7 +7,7 @@ namespace XMLWeather
 {
     public class Day
     {
-        public string date, currentTemp, currentTime, condition, location, tempHigh, tempLow, wind, windDirection, windSpeed, weatherNumber, sunRise, sunSet, precipitation, visibility, feelsLike;
+        public string date, currentTemp, currentTime, day, night, condition, location, tempHigh, tempLow, wind, windDirection, windSpeed, weatherNumber, sunRise, sunSet, precipitation, visibility, feelsLike;
 
         public Day()
         {

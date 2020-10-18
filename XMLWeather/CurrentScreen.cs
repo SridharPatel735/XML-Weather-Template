@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+using System.Globalization;
 
 namespace XMLWeather
 {
@@ -75,9 +76,7 @@ namespace XMLWeather
             tempLabel.Text = currentTemp.ToString("##") + "\u00B0" + "C";
 
             double minTemp = Convert.ToDouble(Form1.days[0].tempLow);
-            tempLabel.Text = currentTemp.ToString("##") + "\u00B0";
             double maxTemp = Convert.ToDouble(Form1.days[0].tempHigh);
-            tempLabel.Text = currentTemp.ToString("##") + "\u00B0";
             minMaxOutput.Text = maxTemp.ToString("##") + "\u00B0" + "/" + minTemp.ToString("##") + "\u00B0";
 
             double feelsTemp = Convert.ToDouble(Form1.days[0].feelsLike);
@@ -96,7 +95,9 @@ namespace XMLWeather
                 hour1 = hour1.AddMinutes(-hour1.Minute);
             }
             hour1 = hour1.AddMinutes(60);
-            hourly1.Text = hour1 + "";
+            string hour3;
+            hour3 = hour1.ToString("hh:mm", DateTimeFormatInfo.InvariantInfo);
+            hourly1.Text = hour3;
 
             string currentString2 = Form1.days[0].currentTime;
             DateTime hour2 = DateTime.Parse(currentString2);
@@ -105,7 +106,9 @@ namespace XMLWeather
                 hour2 = hour2.AddMinutes(-hour2.Minute);
             }
             hour2 = hour2.AddMinutes(120);
-            hourly2.Text = hour2 + "";
+            string hour4;
+            hour4 = hour2.ToString("hh:mm", DateTimeFormatInfo.InvariantInfo);
+            hourly2.Text = hour4;
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)

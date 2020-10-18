@@ -110,12 +110,12 @@
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
             this.forecastLabel.Font = new System.Drawing.Font("Lucida Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(66, 618);
+            this.forecastLabel.Location = new System.Drawing.Point(66, 621);
             this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(250, 56);
             this.forecastLabel.TabIndex = 41;
-            this.forecastLabel.Text = "7 Day";
+            this.forecastLabel.Text = "5 Day";
             this.forecastLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.forecastLabel.Click += new System.EventHandler(this.forecastLabel_Click);
             // 
