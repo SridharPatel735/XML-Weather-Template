@@ -40,23 +40,17 @@
             this.conditionLabel = new System.Windows.Forms.Label();
             this.updateTimer = new System.Windows.Forms.Timer(this.components);
             this.updateTemp = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.windLabel1 = new System.Windows.Forms.Label();
             this.windTitleLabel = new System.Windows.Forms.Label();
             this.windLabel2 = new System.Windows.Forms.Label();
             this.splitLabel = new System.Windows.Forms.Label();
             this.hourlyTitleLabel = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.hourly1 = new System.Windows.Forms.Label();
             this.hourly2 = new System.Windows.Forms.Label();
             this.celciusLabel = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.searchLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -111,7 +105,7 @@
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
             this.forecastLabel.Font = new System.Drawing.Font("Lucida Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(17, 620);
+            this.forecastLabel.Location = new System.Drawing.Point(14, 620);
             this.forecastLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.forecastLabel.Name = "forecastLabel";
             this.forecastLabel.Size = new System.Drawing.Size(165, 56);
@@ -167,21 +161,10 @@
             this.updateTemp.Enabled = true;
             this.updateTemp.Interval = 60000;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing__4_;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-15, 281);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(408, 85);
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
-            // 
             // windLabel1
             // 
             this.windLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.windLabel1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windLabel1.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.windLabel1.ForeColor = System.Drawing.Color.White;
             this.windLabel1.Location = new System.Drawing.Point(34, 289);
             this.windLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -194,7 +177,7 @@
             // windTitleLabel
             // 
             this.windTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.windTitleLabel.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windTitleLabel.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.windTitleLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.windTitleLabel.Location = new System.Drawing.Point(20, 251);
             this.windTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -207,7 +190,7 @@
             // windLabel2
             // 
             this.windLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.windLabel2.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windLabel2.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.windLabel2.ForeColor = System.Drawing.Color.White;
             this.windLabel2.Location = new System.Drawing.Point(153, 289);
             this.windLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -220,9 +203,9 @@
             // splitLabel
             // 
             this.splitLabel.BackColor = System.Drawing.Color.Transparent;
-            this.splitLabel.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.splitLabel.ForeColor = System.Drawing.Color.Black;
-            this.splitLabel.Location = new System.Drawing.Point(124, 289);
+            this.splitLabel.Font = new System.Drawing.Font("Lucida Sans", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitLabel.ForeColor = System.Drawing.Color.White;
+            this.splitLabel.Location = new System.Drawing.Point(127, 289);
             this.splitLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.splitLabel.Name = "splitLabel";
             this.splitLabel.Size = new System.Drawing.Size(21, 58);
@@ -232,36 +215,25 @@
             // hourlyTitleLabel
             // 
             this.hourlyTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.hourlyTitleLabel.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hourlyTitleLabel.Font = new System.Drawing.Font("Lucida Sans", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hourlyTitleLabel.ForeColor = System.Drawing.Color.White;
             this.hourlyTitleLabel.Location = new System.Drawing.Point(16, 385);
             this.hourlyTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hourlyTitleLabel.Name = "hourlyTitleLabel";
-            this.hourlyTitleLabel.Size = new System.Drawing.Size(85, 26);
+            this.hourlyTitleLabel.Size = new System.Drawing.Size(145, 34);
             this.hourlyTitleLabel.TabIndex = 51;
             this.hourlyTitleLabel.Text = "Hourly";
             this.hourlyTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing__4_;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(-15, 416);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(408, 215);
-            this.pictureBox2.TabIndex = 52;
-            this.pictureBox2.TabStop = false;
             // 
             // hourly1
             // 
             this.hourly1.BackColor = System.Drawing.Color.Transparent;
             this.hourly1.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hourly1.ForeColor = System.Drawing.Color.White;
-            this.hourly1.Location = new System.Drawing.Point(45, 435);
+            this.hourly1.Location = new System.Drawing.Point(20, 435);
             this.hourly1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hourly1.Name = "hourly1";
-            this.hourly1.Size = new System.Drawing.Size(130, 148);
+            this.hourly1.Size = new System.Drawing.Size(157, 148);
             this.hourly1.TabIndex = 53;
             this.hourly1.Text = "6:00";
             this.hourly1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -271,10 +243,10 @@
             this.hourly2.BackColor = System.Drawing.Color.Transparent;
             this.hourly2.Font = new System.Drawing.Font("Lucida Sans", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hourly2.ForeColor = System.Drawing.Color.White;
-            this.hourly2.Location = new System.Drawing.Point(203, 435);
+            this.hourly2.Location = new System.Drawing.Point(190, 435);
             this.hourly2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hourly2.Name = "hourly2";
-            this.hourly2.Size = new System.Drawing.Size(130, 148);
+            this.hourly2.Size = new System.Drawing.Size(157, 148);
             this.hourly2.TabIndex = 54;
             this.hourly2.Text = "7:00";
             this.hourly2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -303,23 +275,12 @@
             this.pictureBox3.TabIndex = 56;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing__4_;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(-15, 610);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(408, 85);
-            this.pictureBox4.TabIndex = 57;
-            this.pictureBox4.TabStop = false;
-            // 
             // searchLabel
             // 
             this.searchLabel.BackColor = System.Drawing.Color.Transparent;
             this.searchLabel.Font = new System.Drawing.Font("Lucida Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchLabel.ForeColor = System.Drawing.Color.White;
-            this.searchLabel.Location = new System.Drawing.Point(180, 620);
+            this.searchLabel.Location = new System.Drawing.Point(174, 620);
             this.searchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.searchLabel.Name = "searchLabel";
             this.searchLabel.Size = new System.Drawing.Size(191, 56);
@@ -338,17 +299,14 @@
             this.Controls.Add(this.splitLabel);
             this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.forecastLabel);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.celciusLabel);
             this.Controls.Add(this.hourly2);
             this.Controls.Add(this.hourly1);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.hourlyTitleLabel);
             this.Controls.Add(this.windLabel2);
             this.Controls.Add(this.windTitleLabel);
             this.Controls.Add(this.windLabel1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.conditionLabel);
             this.Controls.Add(this.feelsLikeLabel);
             this.Controls.Add(this.dateTimeLabel);
@@ -360,10 +318,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(375, 690);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -379,18 +334,15 @@
         private System.Windows.Forms.Label conditionLabel;
         private System.Windows.Forms.Timer updateTimer;
         private System.Windows.Forms.Timer updateTemp;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label windLabel1;
         private System.Windows.Forms.Label windTitleLabel;
         private System.Windows.Forms.Label windLabel2;
         private System.Windows.Forms.Label splitLabel;
         private System.Windows.Forms.Label hourlyTitleLabel;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label hourly1;
         private System.Windows.Forms.Label hourly2;
         private System.Windows.Forms.Label celciusLabel;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label searchLabel;
     }
 }

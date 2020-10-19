@@ -16,16 +16,15 @@ namespace XMLWeather
         // TODO: create list to hold day objects
         public static List<Day> days = new List<Day>();
         public static string place = "stratford,ca";
+        public static string Hour1Temp, Hour1Feels, Hour1Humibity, Hour2Temp, Hour2Feels, Hour2Humibity;
 
         public Form1()
         {
-            CitySelect cs = new CitySelect();
-            this.Controls.Add(cs);
 
             InitializeComponent();
             ExtractForecast();
             ExtractCurrent();
-            //ExtractHourly();
+            ExtractHourly();
 
             //open weather screen for todays weather
             CurrentScreen css = new CurrentScreen();
@@ -102,6 +101,24 @@ namespace XMLWeather
         {
             string urlHourly = "http://api.openweathermap.org/data/2.5/forecast?q=" + place + "&mode=xml&units=metric&appid=4c8cc783408cdd4d9defadf565dc355a";
             XmlReader reader = XmlReader.Create(urlHourly);
+
+            reader.ReadToFollowing("temperature");
+            Hour1Temp = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("feels_like");
+            Hour1Feels = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("humidity");
+            Hour1Feels = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("temperature");
+            Hour2Temp = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("feels_like");
+            Hour2Feels = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("humidity");
+            Hour2Feels = reader.GetAttribute("value");
         }
     }
 }

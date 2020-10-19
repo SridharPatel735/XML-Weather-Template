@@ -183,6 +183,56 @@ namespace XMLWeather.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap baa901964d99f8483fd74f5252bbcaa9 {
+            get {
+                object obj = ResourceManager.GetObject("baa901964d99f8483fd74f5252bbcaa9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bce5b333cb399a0eb7b12bdbd698390f {
+            get {
+                object obj = ResourceManager.GetObject("bce5b333cb399a0eb7b12bdbd698390f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap christmas_snowy_background_1048_11125 {
+            get {
+                object obj = ResourceManager.GetObject("christmas_snowy_background_1048_11125", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap k5oCcy {
+            get {
+                object obj = ResourceManager.GetObject("k5oCcy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap preview_89537_uPNkIXfFl5_high_0006 {
+            get {
+                object obj = ResourceManager.GetObject("preview_89537_uPNkIXfFl5_high_0006", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Untitled_drawing {
             get {
                 object obj = ResourceManager.GetObject("Untitled_drawing", resourceCulture);

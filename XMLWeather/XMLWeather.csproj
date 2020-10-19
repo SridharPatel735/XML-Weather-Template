@@ -211,6 +211,27 @@
   <ItemGroup>
     <None Include="Resources\PinClipart.com_moon-clipart-png_427179.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baa901964d99f8483fd74f5252bbcaa9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k5oCcy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bce5b333cb399a0eb7b12bdbd698390f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview-89537-uPNkIXfFl5-high_0006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christmas-snowy-background_1048-11125.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set_of_sunny_day_vector_background_523668.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1536746803623-cef87080bfc8.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

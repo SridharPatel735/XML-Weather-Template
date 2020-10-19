@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForecastScreen));
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.currentLabel = new System.Windows.Forms.Label();
             this.date1Label = new System.Windows.Forms.Label();
             this.day1Image = new System.Windows.Forms.PictureBox();
@@ -40,46 +39,26 @@
             this.conditionLabel2 = new System.Windows.Forms.Label();
             this.day2Image = new System.Windows.Forms.PictureBox();
             this.date2Label = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.updateTimer = new System.Windows.Forms.Timer(this.components);
             this.minMaxDayNightLabel3 = new System.Windows.Forms.Label();
             this.conditionLabel3 = new System.Windows.Forms.Label();
             this.day3Image = new System.Windows.Forms.PictureBox();
             this.date3Label = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.minMaxDayNightLabel4 = new System.Windows.Forms.Label();
             this.conditionLabel4 = new System.Windows.Forms.Label();
             this.day4Image = new System.Windows.Forms.PictureBox();
             this.date4Label = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.minMaxDayNightLabel5 = new System.Windows.Forms.Label();
             this.conditionLabel5 = new System.Windows.Forms.Label();
             this.day5Image = new System.Windows.Forms.PictureBox();
             this.date5Label = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.searchLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day1Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day2Image)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day3Image)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day4Image)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day5Image)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing__4_;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(-16, 1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(408, 149);
-            this.pictureBox2.TabIndex = 70;
-            this.pictureBox2.TabStop = false;
             // 
             // currentLabel
             // 
@@ -189,17 +168,6 @@
             this.date2Label.TabIndex = 82;
             this.date2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing__4_;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(-16, 126);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(408, 149);
-            this.pictureBox3.TabIndex = 81;
-            this.pictureBox3.TabStop = false;
-            // 
             // updateTimer
             // 
             this.updateTimer.Enabled = true;
@@ -253,17 +221,6 @@
             this.date3Label.TabIndex = 87;
             this.date3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing__4_;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(-17, 251);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(408, 149);
-            this.pictureBox4.TabIndex = 86;
-            this.pictureBox4.TabStop = false;
-            // 
             // minMaxDayNightLabel4
             // 
             this.minMaxDayNightLabel4.BackColor = System.Drawing.Color.Transparent;
@@ -310,17 +267,6 @@
             this.date4Label.Size = new System.Drawing.Size(275, 26);
             this.date4Label.TabIndex = 92;
             this.date4Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing__4_;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(-17, 376);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(408, 149);
-            this.pictureBox6.TabIndex = 91;
-            this.pictureBox6.TabStop = false;
             // 
             // minMaxDayNightLabel5
             // 
@@ -369,17 +315,6 @@
             this.date5Label.TabIndex = 97;
             this.date5Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing__4_;
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(-17, 501);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(408, 149);
-            this.pictureBox8.TabIndex = 96;
-            this.pictureBox8.TabStop = false;
-            // 
             // searchLabel
             // 
             this.searchLabel.BackColor = System.Drawing.Color.Transparent;
@@ -406,46 +341,35 @@
             this.Controls.Add(this.conditionLabel5);
             this.Controls.Add(this.day5Image);
             this.Controls.Add(this.date5Label);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.minMaxDayNightLabel4);
             this.Controls.Add(this.conditionLabel4);
             this.Controls.Add(this.day4Image);
             this.Controls.Add(this.date4Label);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.minMaxDayNightLabel3);
             this.Controls.Add(this.conditionLabel3);
             this.Controls.Add(this.day3Image);
             this.Controls.Add(this.date3Label);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.minMaxDayNightLabel2);
             this.Controls.Add(this.conditionLabel2);
             this.Controls.Add(this.day2Image);
             this.Controls.Add(this.date2Label);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.minMaxDayNightLabel1);
             this.Controls.Add(this.conditionLabel1);
             this.Controls.Add(this.day1Image);
             this.Controls.Add(this.date1Label);
-            this.Controls.Add(this.pictureBox2);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ForecastScreen";
             this.Size = new System.Drawing.Size(375, 690);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day1Image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day2Image)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day3Image)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day4Image)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.day5Image)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label currentLabel;
         private System.Windows.Forms.Label date1Label;
         private System.Windows.Forms.PictureBox day1Image;
@@ -455,23 +379,19 @@
         private System.Windows.Forms.Label conditionLabel2;
         private System.Windows.Forms.PictureBox day2Image;
         private System.Windows.Forms.Label date2Label;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Timer updateTimer;
         private System.Windows.Forms.Label minMaxDayNightLabel3;
         private System.Windows.Forms.Label conditionLabel3;
         private System.Windows.Forms.PictureBox day3Image;
         private System.Windows.Forms.Label date3Label;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label minMaxDayNightLabel4;
         private System.Windows.Forms.Label conditionLabel4;
         private System.Windows.Forms.PictureBox day4Image;
         private System.Windows.Forms.Label date4Label;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label minMaxDayNightLabel5;
         private System.Windows.Forms.Label conditionLabel5;
         private System.Windows.Forms.PictureBox day5Image;
         private System.Windows.Forms.Label date5Label;
-        private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label searchLabel;
     }
 }

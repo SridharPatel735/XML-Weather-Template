@@ -16,7 +16,6 @@ namespace XMLWeather
         public CurrentScreen()
         {
             InitializeComponent();
-            splitLabel.Parent = pictureBox1;
             splitLabel.Text = "|\n|";
             DisplayCurrent();
         }
@@ -29,46 +28,46 @@ namespace XMLWeather
             if (weatherNum >= 200 && weatherNum <= 232)
             {
                 pictureBox3.BackgroundImage = Properties.Resources._11n;
+                this.BackgroundImage = Properties.Resources.bce5b333cb399a0eb7b12bdbd698390f;
             }
-            else if (weatherNum >= 300 && weatherNum <= 321)
+            else if ((weatherNum >= 300 && weatherNum <= 321) || (weatherNum >= 520 && weatherNum <= 531))
             {
                 pictureBox3.BackgroundImage = Properties.Resources._09n;
+                this.BackgroundImage = Properties.Resources.k5oCcy;
             }
             else if (weatherNum >= 500 && weatherNum <= 504)
             {
                 pictureBox3.BackgroundImage = Properties.Resources._10d;
+                this.BackgroundImage = Properties.Resources.k5oCcy;
             }
-            else if (weatherNum == 511)
+            else if ((weatherNum == 511) || (weatherNum >= 600 && weatherNum <= 622))
             {
                 pictureBox3.BackgroundImage = Properties.Resources._13d;
-            }
-            else if (weatherNum >= 520 && weatherNum <= 531)
-            {
-                pictureBox3.BackgroundImage = Properties.Resources._09n;
-            }
-            else if (weatherNum >= 600 && weatherNum <= 622)
-            {
-                pictureBox3.BackgroundImage = Properties.Resources._13d;
+                this.BackgroundImage = Properties.Resources.christmas_snowy_background_1048_11125;
             }
             else if (weatherNum >= 701 && weatherNum <= 781)
             {
                 pictureBox3.BackgroundImage = Properties.Resources._50n;
+                this.BackgroundImage = Properties.Resources.preview_89537_uPNkIXfFl5_high_0006;
             }
             else if (weatherNum == 800)
             {
-                pictureBox3.BackgroundImage = Properties.Resources._01d;
+                this.BackgroundImage = Properties.Resources.Untitled_drawing;
             }
             else if (weatherNum == 801)
             {
                 pictureBox3.BackgroundImage = Properties.Resources._02d;
+                this.BackgroundImage = Properties.Resources.baa901964d99f8483fd74f5252bbcaa9;
             }
             else if (weatherNum == 802)
             {
                 pictureBox3.BackgroundImage = Properties.Resources._03d;
+                this.BackgroundImage = Properties.Resources.baa901964d99f8483fd74f5252bbcaa9;
             }
             else if (weatherNum == 803 || weatherNum == 804)
             {
                 pictureBox3.BackgroundImage = Properties.Resources._04n;
+                this.BackgroundImage = Properties.Resources.baa901964d99f8483fd74f5252bbcaa9;
             }
             #endregion
 
@@ -112,6 +111,7 @@ namespace XMLWeather
             string hour3;
             hour3 = hour1.ToString("hh:mm", DateTimeFormatInfo.InvariantInfo);
             hourly1.Text = hour3;
+            hourly1.Text += "\n\nTemp: " + Form1.Hour1Temp + "\nFeels Like: " + Form1.Hour1Feels + "\nHumibity: " + Form1.Hour1Humibity;
 
             string currentString2 = Form1.days[0].currentTime;
             DateTime hour2 = DateTime.Parse(currentString2);
@@ -123,6 +123,7 @@ namespace XMLWeather
             string hour4;
             hour4 = hour2.ToString("hh:mm", DateTimeFormatInfo.InvariantInfo);
             hourly2.Text = hour4;
+            hourly2.Text += "\n\nTemp: " + Form1.Hour2Temp + "\nFeels Like: " + Form1.Hour2Feels + "\nHumibity: " + Form1.Hour2Humibity;
             #endregion
         }
 

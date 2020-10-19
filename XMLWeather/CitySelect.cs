@@ -21,6 +21,9 @@ namespace XMLWeather
             {
                 tryAgain.Text = "";
                 Form1.place = cityInput.Text;
+                Form1.ExtractForecast();
+                Form1.ExtractCurrent();
+                Form1.ExtractHourly();
                 if (cityInput.Text == "")
                 {
                     tryAgain.Text = "Please try again.";
@@ -29,6 +32,9 @@ namespace XMLWeather
                 {
                     Form f = this.FindForm();
                     f.Controls.Remove(this);
+
+                    CurrentScreen css = new CurrentScreen();
+                    f.Controls.Add(css);
                 }
 
 

@@ -62,7 +62,7 @@ namespace XMLWeather
             {
                 day1Image.BackgroundImage = Properties.Resources._11n;
             }
-            else if (weatherNum >= 300 && weatherNum <= 321)
+            else if ((weatherNum >= 300 && weatherNum <= 321) || (weatherNum >= 520 && weatherNum <= 531))
             {
                 day1Image.BackgroundImage = Properties.Resources._09n;
             }
@@ -70,15 +70,7 @@ namespace XMLWeather
             {
                 day1Image.BackgroundImage = Properties.Resources._10d;
             }
-            else if (weatherNum == 511)
-            {
-                day1Image.BackgroundImage = Properties.Resources._13d;
-            }
-            else if (weatherNum >= 520 && weatherNum <= 531)
-            {
-                day1Image.BackgroundImage = Properties.Resources._09n;
-            }
-            else if (weatherNum >= 600 && weatherNum <= 622)
+            else if ((weatherNum == 511) || (weatherNum >= 600 && weatherNum <= 622))
             {
                 day1Image.BackgroundImage = Properties.Resources._13d;
             }
@@ -125,7 +117,7 @@ namespace XMLWeather
             {
                 day2Image.BackgroundImage = Properties.Resources._11n;
             }
-            else if (weatherNum >= 300 && weatherNum <= 321)
+            else if ((weatherNum >= 300 && weatherNum <= 321) || (weatherNum >= 520 && weatherNum <= 531))
             {
                 day2Image.BackgroundImage = Properties.Resources._09n;
             }
@@ -133,15 +125,7 @@ namespace XMLWeather
             {
                 day2Image.BackgroundImage = Properties.Resources._10d;
             }
-            else if (weatherNum == 511)
-            {
-                day2Image.BackgroundImage = Properties.Resources._13d;
-            }
-            else if (weatherNum >= 520 && weatherNum <= 531)
-            {
-                day2Image.BackgroundImage = Properties.Resources._09n;
-            }
-            else if (weatherNum >= 600 && weatherNum <= 622)
+            else if ((weatherNum == 511) || (weatherNum >= 600 && weatherNum <= 622))
             {
                 day2Image.BackgroundImage = Properties.Resources._13d;
             }
@@ -188,7 +172,7 @@ namespace XMLWeather
             {
                 day3Image.BackgroundImage = Properties.Resources._11n;
             }
-            else if (weatherNum >= 300 && weatherNum <= 321)
+            else if ((weatherNum >= 300 && weatherNum <= 321) || (weatherNum >= 520 && weatherNum <= 531))
             {
                 day3Image.BackgroundImage = Properties.Resources._09n;
             }
@@ -196,15 +180,7 @@ namespace XMLWeather
             {
                 day3Image.BackgroundImage = Properties.Resources._10d;
             }
-            else if (weatherNum == 511)
-            {
-                day3Image.BackgroundImage = Properties.Resources._13d;
-            }
-            else if (weatherNum >= 520 && weatherNum <= 531)
-            {
-                day3Image.BackgroundImage = Properties.Resources._09n;
-            }
-            else if (weatherNum >= 600 && weatherNum <= 622)
+            else if ((weatherNum == 511) || (weatherNum >= 600 && weatherNum <= 622))
             {
                 day3Image.BackgroundImage = Properties.Resources._13d;
             }
@@ -251,7 +227,7 @@ namespace XMLWeather
             {
                 day4Image.BackgroundImage = Properties.Resources._11n;
             }
-            else if (weatherNum >= 300 && weatherNum <= 321)
+            else if ((weatherNum >= 300 && weatherNum <= 321) || (weatherNum >= 520 && weatherNum <= 531))
             {
                 day4Image.BackgroundImage = Properties.Resources._09n;
             }
@@ -259,15 +235,7 @@ namespace XMLWeather
             {
                 day4Image.BackgroundImage = Properties.Resources._10d;
             }
-            else if (weatherNum == 511)
-            {
-                day4Image.BackgroundImage = Properties.Resources._13d;
-            }
-            else if (weatherNum >= 520 && weatherNum <= 531)
-            {
-                day4Image.BackgroundImage = Properties.Resources._09n;
-            }
-            else if (weatherNum >= 600 && weatherNum <= 622)
+            else if ((weatherNum == 511) || (weatherNum >= 600 && weatherNum <= 622))
             {
                 day4Image.BackgroundImage = Properties.Resources._13d;
             }
@@ -314,7 +282,7 @@ namespace XMLWeather
             {
                 day5Image.BackgroundImage = Properties.Resources._11n;
             }
-            else if (weatherNum >= 300 && weatherNum <= 321)
+            else if ((weatherNum >= 300 && weatherNum <= 321) || (weatherNum >= 520 && weatherNum <= 531))
             {
                 day5Image.BackgroundImage = Properties.Resources._09n;
             }
@@ -322,15 +290,7 @@ namespace XMLWeather
             {
                 day5Image.BackgroundImage = Properties.Resources._10d;
             }
-            else if (weatherNum == 511)
-            {
-                day5Image.BackgroundImage = Properties.Resources._13d;
-            }
-            else if (weatherNum >= 520 && weatherNum <= 531)
-            {
-                day5Image.BackgroundImage = Properties.Resources._09n;
-            }
-            else if (weatherNum >= 600 && weatherNum <= 622)
+            else if ((weatherNum == 511) || (weatherNum >= 600 && weatherNum <= 622))
             {
                 day5Image.BackgroundImage = Properties.Resources._13d;
             }
