@@ -42,16 +42,19 @@ namespace XMLWeather
 
         private void updateTimer_Tick(object sender, EventArgs e)
         {
+            Form1.ExtractForecast();
             displayForecast();
         }
 
         private void Day1()
         {
+            #region Current Date
             string currentString = Form1.days[1].date;
             DateTime day = DateTime.Parse(currentString);
             string dayDisplay;
             dayDisplay = day.ToString("ddd dd MMMM", DateTimeFormatInfo.InvariantInfo);
             date1Label.Text = dayDisplay;
+            #endregion
 
             //Change background color depending on the time of day and weather
             double weatherNum = Convert.ToDouble(Form1.days[1].weatherNumber);
@@ -358,6 +361,15 @@ namespace XMLWeather
             double dayTemp = Convert.ToDouble(Form1.days[5].day);
             double night = Convert.ToDouble(Form1.days[5].night);
             minMaxDayNightLabel5.Text = "Max:" + maxTemp.ToString("##") + "\u00B0" + " Min:" + minTemp.ToString("##") + "\u00B0" + " Day:" + dayTemp.ToString("##") + "\u00B0" + " Night:" + night.ToString("##") + "\u00B0";
+        }
+
+        private void searchLabel_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+
+            CitySelect cs = new CitySelect();
+            f.Controls.Add(cs);
         }
     }
 }

@@ -15,22 +15,27 @@ namespace XMLWeather
     {
         // TODO: create list to hold day objects
         public static List<Day> days = new List<Day>();
+        public static string place = "stratford,ca";
 
         public Form1()
         {
+            CitySelect cs = new CitySelect();
+            this.Controls.Add(cs);
+
             InitializeComponent();
             ExtractForecast();
             ExtractCurrent();
             //ExtractHourly();
 
-            // open weather screen for todays weather
-            CurrentScreen cs = new CurrentScreen();
-            this.Controls.Add(cs);
+            //open weather screen for todays weather
+            CurrentScreen css = new CurrentScreen();
+            this.Controls.Add(css);
         }
 
-        private void ExtractForecast()
+        public static void ExtractForecast()
         {
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Stratford,CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
+            string urlForecast = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + place + "&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0";
+            XmlReader reader = XmlReader.Create(urlForecast);
 
             while (reader.Read())
             {
@@ -59,8 +64,9 @@ namespace XMLWeather
         }
         public static void ExtractCurrent()
         {
+            string urlCurrent = "http://api.openweathermap.org/data/2.5/weather?q=" + place + "&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0";
             // current info is not included in forecast file so we need to use this file to get it
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Stratford,ca&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
+            XmlReader reader = XmlReader.Create(urlCurrent);
 
             //TODO: find the city and current temperature and add to appropriate item in days list
             reader.ReadToFollowing("city");
@@ -94,7 +100,8 @@ namespace XMLWeather
         }
         public static void ExtractHourly()
         {
-            XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast?q=Stratford,CA&appid=4c8cc783408cdd4d9defadf565dc355a");
+            string urlHourly = "http://api.openweathermap.org/data/2.5/forecast?q=" + place + "&mode=xml&units=metric&appid=4c8cc783408cdd4d9defadf565dc355a";
+            XmlReader reader = XmlReader.Create(urlHourly);
         }
     }
 }

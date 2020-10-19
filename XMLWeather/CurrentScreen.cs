@@ -16,14 +16,15 @@ namespace XMLWeather
         public CurrentScreen()
         {
             InitializeComponent();
-            label4.Text = "|\n|";
-            //windLabel.Parent = pictureBox1;
+            splitLabel.Parent = pictureBox1;
+            splitLabel.Text = "|\n|";
             DisplayCurrent();
         }
 
         public void DisplayCurrent()
         {
             //Change background color depending on the time of day and weather
+            #region Weather Icons
             double weatherNum = Convert.ToDouble(Form1.days[0].weatherNumber);
             if (weatherNum >= 200 && weatherNum <= 232)
             {
@@ -69,25 +70,38 @@ namespace XMLWeather
             {
                 pictureBox3.BackgroundImage = Properties.Resources._04n;
             }
+            #endregion
 
+            #region City, Current Date, Current Temp
             cityOutput.Text = Form1.days[0].location;
             dateTimeLabel.Text = Form1.days[0].date + " " + Form1.days[0].currentTime;
             double currentTemp = Convert.ToDouble(Form1.days[0].currentTemp);
-            tempLabel.Text = currentTemp.ToString("##") + "\u00B0" + "C";
+            tempLabel.Text = currentTemp.ToString("##") + "\u00B0";
+            #endregion
 
+            #region Min/Max, Feels Like
             double minTemp = Convert.ToDouble(Form1.days[0].tempLow);
             double maxTemp = Convert.ToDouble(Form1.days[0].tempHigh);
-            minMaxOutput.Text = maxTemp.ToString("##") + "\u00B0" + "/" + minTemp.ToString("##") + "\u00B0";
+            minMaxOutput.ForeColor = Color.OrangeRed;
+            minMaxOutput.Text = maxTemp.ToString("##") + "\u00B0";
+            minMaxOutput.ForeColor = Color.White;
+            minMaxOutput.Text += "/";
+            minMaxOutput.ForeColor = Color.CadetBlue;
+            minMaxOutput.Text += minTemp.ToString("##") + "\u00B0";
 
             double feelsTemp = Convert.ToDouble(Form1.days[0].feelsLike);
             feelsLikeLabel.Text = "Feels Like: " + feelsTemp.ToString("##") + "\u00B0";
             conditionLabel.Text = Form1.days[0].condition;
+            #endregion
 
+            #region Wind
             double windSpeed = Convert.ToDouble(Form1.days[0].windSpeed);
             windSpeed = windSpeed * 3.6;
             windLabel1.Text = windSpeed.ToString("##") + "km/h";
             windLabel2.Text = Form1.days[0].windDirection;
+            #endregion
 
+            #region Hourly
             string currentString = Form1.days[0].currentTime;
             DateTime hour1 = DateTime.Parse(currentString);
             if (hour1.Minute > 0)
@@ -109,6 +123,7 @@ namespace XMLWeather
             string hour4;
             hour4 = hour2.ToString("hh:mm", DateTimeFormatInfo.InvariantInfo);
             hourly2.Text = hour4;
+            #endregion
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)
@@ -124,6 +139,15 @@ namespace XMLWeather
         {
             Form1.ExtractCurrent();
             DisplayCurrent();
+        }
+
+        private void searchLabel_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+
+            CitySelect cs = new CitySelect();
+            f.Controls.Add(cs);
         }
     }
 }

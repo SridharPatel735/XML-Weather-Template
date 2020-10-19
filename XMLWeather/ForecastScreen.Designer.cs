@@ -57,6 +57,7 @@
             this.day5Image = new System.Windows.Forms.PictureBox();
             this.date5Label = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.searchLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day1Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.day2Image)).BeginInit();
@@ -88,7 +89,7 @@
             this.currentLabel.Location = new System.Drawing.Point(0, 635);
             this.currentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.currentLabel.Name = "currentLabel";
-            this.currentLabel.Size = new System.Drawing.Size(375, 55);
+            this.currentLabel.Size = new System.Drawing.Size(187, 55);
             this.currentLabel.TabIndex = 61;
             this.currentLabel.Text = "Today";
             this.currentLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -379,12 +380,27 @@
             this.pictureBox8.TabIndex = 96;
             this.pictureBox8.TabStop = false;
             // 
+            // searchLabel
+            // 
+            this.searchLabel.BackColor = System.Drawing.Color.Transparent;
+            this.searchLabel.Font = new System.Drawing.Font("Lucida Sans", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLabel.ForeColor = System.Drawing.Color.White;
+            this.searchLabel.Location = new System.Drawing.Point(182, 635);
+            this.searchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.searchLabel.Name = "searchLabel";
+            this.searchLabel.Size = new System.Drawing.Size(193, 55);
+            this.searchLabel.TabIndex = 101;
+            this.searchLabel.Text = "Search";
+            this.searchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.searchLabel.Click += new System.EventHandler(this.searchLabel_Click);
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::XMLWeather.Properties.Resources.Untitled_drawing;
+            this.Controls.Add(this.searchLabel);
             this.Controls.Add(this.currentLabel);
             this.Controls.Add(this.minMaxDayNightLabel5);
             this.Controls.Add(this.conditionLabel5);
@@ -456,5 +472,6 @@
         private System.Windows.Forms.PictureBox day5Image;
         private System.Windows.Forms.Label date5Label;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label searchLabel;
     }
 }

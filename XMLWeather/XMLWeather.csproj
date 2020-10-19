@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CitySelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CitySelect.Designer.cs">
+      <DependentUpon>CitySelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Component1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CitySelect.resx">
+      <DependentUpon>CitySelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CurrentScreen.resx">
       <DependentUpon>CurrentScreen.cs</DependentUpon>
     </EmbeddedResource>
